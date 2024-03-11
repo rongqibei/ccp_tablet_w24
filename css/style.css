@@ -464,8 +464,7 @@ html {
     object-fit: cover;
 }
 
-/* Medium screens (700px) */
-@media (min-width: 700px) {
+@media (min-width: 750px) {
     .travel-card {
         max-width: none;
     }
