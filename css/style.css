@@ -241,12 +241,7 @@ html {
     border-radius: 20px;
     max-width: 100%; 
     /* margin: 20px 5vw; */
-    /* max-width: 450px; */
-    transition: transform 0.3s ease;
-}
-
-.pet-card:hover {
-    transform: scale(1.02); 
+    max-width: 400px;
 }
 
 .pet-photo img {
@@ -303,13 +298,24 @@ html {
     gap: 30px;
     padding: 5px;
     margin: 20px 5vw;
-    max-width: 400px;
 }
 
 @media (min-width: 750px) { 
     .pets-container {
         grid-template-columns: repeat(2, 1fr); 
         max-width: none;
+    }
+
+    .pets-card {
+        max-width: none;
+    }
+
+    .pet-card {
+        transition: transform 0.3s ease;
+    }
+
+    .pet-card:hover {
+        transform: scale(1.02); 
     }
 }
 
@@ -340,10 +346,6 @@ html {
     max-width: 450px;
     justify-content: flex-start;
     transition: transform 0.3s ease; 
-}
-
-.recipes-card:hover {
-    transform: scale(1.015); 
 }
 
 .recipes-card img {
@@ -398,6 +400,10 @@ html {
     .recipes-card {
         max-width: none;
     }
+
+    .recipes-card:hover {
+        transform: scale(1.015); 
+    }
 }
 
 @media (min-width: 1400px) { 
@@ -428,9 +434,6 @@ html {
     max-width: 450px;
 }
 
-.travel-card:hover {
-    transform: scale(1.015);
-}
 
 .travel-card h2 {
     font-size: 23px;
@@ -464,6 +467,7 @@ html {
     object-fit: cover;
 }
 
+/* Medium screens (700px) */
 @media (min-width: 750px) {
     .travel-card {
         max-width: none;
@@ -484,6 +488,10 @@ html {
 
     .travel-card .image .second {
         grid-column: 3 / 4;
+    }
+
+    .travel-card:hover {
+        transform: scale(1.015);
     }
 }
 
